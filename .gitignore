@@ -1,0 +1,15 @@
+#".gitignore" for our project codename: PurpleDream
+#Please insert changes below.
+
+#Folders to ignore:
+Temp/**
+Library/**
+Obj/**
+ 
+#Datatypes to ignore:
+**.csproj
+**.unityproj
+**.sln
+**.user
+**.userprefs
+**.DS_store
