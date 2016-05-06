@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 1000f;
     public float moveForce = 10f;
     public float sqrMaxSpeed = Mathf.Pow(10f, 2);
+    public float stoppingForce = 5f;
 
     private Rigidbody2D rb2d;
     public bool isInAir;
@@ -43,15 +44,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2d.AddForce(Vector2.right * movementInput * moveForce);
         }
-            // Stopping
-        if(Input.GetButtonUp("Horizontal")) // (vtll rüber in update)
+            // Slowing down
+        if ((movementInput == 0 || movementInput * rb2d.velocity.x < 0) && rb2d.velocity.sqrMagnitude > 0f)
         {
-            rb2d.rotation = 0f;
-            rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
-        }
-        if(Input.GetButtonDown("Horizontal"))
-        {
-            rb2d.constraints = RigidbodyConstraints2D.None;
+            rb2d.AddForce(rb2d.velocity.normalized * -stoppingForce);
         }
     }
 }
