@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerBabyMovement : MonoBehaviour
 {
     public float jumpForce = 1000f;
     public float moveForce = 10f;
     public float sqrMaxSpeed = Mathf.Pow(10f, 2);
     public float stoppingForce = 5f;
+    public bool isInAir;
 
     private Rigidbody2D rb2d;
-    public bool isInAir;
 
     void Start()
     {
