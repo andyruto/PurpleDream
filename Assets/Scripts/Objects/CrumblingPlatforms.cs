@@ -7,7 +7,6 @@ public class CrumblingPlatforms : MonoBehaviour {
     public float timer = 1f;
     public float platformTimer = 5f;
     public float vanishingSpeed = .95f;
-    
 
     // Private
     // Components
@@ -35,22 +34,11 @@ public class CrumblingPlatforms : MonoBehaviour {
 
         }
 	}
-
-	// Executed when collision stops
-	void OnCollisionExit2D(Collision2D coll)
-	{
-		// Player not colliding any more
-		/*if (coll.gameObject == GameObject.Find("Player"))
-		{
-			timer = 1f;
-            playerOnPlatform = false;
-
-        }*/
-	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+		// Let the clouds disapear slowly
 		if (playerOnPlatform)
         {
             spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, spr.color.a * vanishingSpeed);
@@ -69,9 +57,9 @@ public class CrumblingPlatforms : MonoBehaviour {
 			if (timer < 0f) {
 				timer = 1f;
                 
-                Color color = spr.color;
-                //color.a = ;
+				// Cloud disapeard
                 spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 0f);
+
                 platformBroken = true;
                 playerOnPlatform = false;
 
@@ -83,16 +71,18 @@ public class CrumblingPlatforms : MonoBehaviour {
 			//disabling platform collider
 			boxColl.enabled = false;
 
-			//platform timer for platform appearance
+			// platform timer for platform appearance
 			platformTimer -= Time.deltaTime;
 
-			//platform timer is over
+			// platform timer is over
 			if (platformTimer < 1f)
 			{
 				platformTimer = 5f;
 
 				boxColl.enabled = true;
                 platformBroken = false;
+
+				// Cloud apeard
                 spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 255f); ;
             }
 		}

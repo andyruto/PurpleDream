@@ -2,17 +2,16 @@
 using System.Collections;
 
 public class CrumblingPlatformsWithAnimator : MonoBehaviour {
-	// Properties and fields
-	private Animator anim;
-	private BoxCollider2D boxColl;
+	// --- Properties and fields --- //
+	//Public
 	public float timer = 1f;
 	public float platformTimer = 5f;
 
-	/*
-	private bool playerOnPlatform = false;
-	private bool platformBroken = false;
-	*/
+	//Private
+	private Animator anim;
+	private BoxCollider2D boxColl;
 
+	// --- Methods --- //
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
