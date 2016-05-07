@@ -22,8 +22,18 @@ public class PlayerBabyMovement : MonoBehaviour
         //if (coll.gameObject.layer == LayerMask.NameToLayer("Ground"))
         //{
             // Ground hit
-            isInAir = false;
         //}
+
+        float tolerance = .2f;
+        Vector2 center = coll.collider.bounds.center;
+        Vector2 collision = coll.contacts[0].point;
+        Bounds bounds = coll.collider.bounds;
+
+        if (collision.y > (center.y + bounds.size.y / 2) - tolerance && // is on top
+            collision.x > center.x - bounds.size.x / 2 + tolerance && collision.x < center.x + bounds.size.x / 2 - tolerance) // is not on side
+        {
+            isInAir = false;
+        }
     }
 
 	void FixedUpdate()
