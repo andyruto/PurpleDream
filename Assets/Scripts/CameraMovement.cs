@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-class CameraMovement : MonoBehaviour
-{
+class CameraMovement : MonoBehaviour {
+	//Properties and fields
 	public float cameraDistOffset = 10f;
 	private Camera mainCamera;
 	private GameObject player;
