@@ -19,6 +19,10 @@ public class PlayerBabyAnimation : MonoBehaviour {
         {
             anim.SetBool("IsMoving", true);
         }
+        if (Input.GetAxis("Crouch") != 0)
+        {
+            anim.SetBool("IsMoving", false);
+        }
 	}
 
     void FixedUpdate()

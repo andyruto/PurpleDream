@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: ee111bc9e4d9966419393d6901ceaf0a
+timeCreated: 1462616219
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Towers_0
+    21300002: Towers_1
+    21300004: Towers_2
+    21300006: Towers_3
+    21300008: Towers_4
+    21300010: Towers_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Towers_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63, y: 327.5}
+        - {x: 63, y: 319.5}
+        - {x: 57, y: 319.5}
+        - {x: 57, y: 327.5}
+        - {x: 38, y: 327.5}
+        - {x: 38, y: 319.5}
+        - {x: 32, y: 319.5}
+        - {x: 32, y: 327.5}
+        - {x: 13, y: 327.5}
+        - {x: 13, y: 319.5}
+        - {x: 7, y: 319.5}
+        - {x: 7, y: 327.5}
+        - {x: -7, y: 327.5}
+        - {x: -7, y: 319.5}
+        - {x: -13, y: 319.5}
+        - {x: -13, y: 327.5}
+        - {x: -32, y: 327.5}
+        - {x: -32, y: 319.5}
+        - {x: -38, y: 319.5}
+        - {x: -38, y: 327.5}
+        - {x: -57, y: 327.5}
+        - {x: -57, y: 319.5}
+        - {x: -63, y: 319.5}
+        - {x: -63, y: 327.5}
+        - {x: -80, y: 327.5}
+        - {x: -80, y: -327.5}
+        - {x: 80, y: -327.5}
+        - {x: 80, y: 327.5}
+    - name: Towers_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 250
+        width: 160
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: -186.5}
+        - {x: 61, y: -180.5}
+        - {x: 71, y: -176.5}
+        - {x: 79, y: -163.5}
+        - {x: 80, y: -157.5}
+        - {x: 80, y: 202.5}
+        - {x: -32, y: 202.5}
+        - {x: -32, y: 194.5}
+        - {x: -38, y: 202.5}
+        - {x: -80, y: 202.5}
+        - {x: -80, y: -155.5}
+        - {x: -77, y: -162.5}
+        - {x: -68, y: -178.5}
+        - {x: -56, y: -191.5}
+        - {x: -30, y: -199.5}
+        - {x: -19, y: -202.5}
+        - {x: 24, y: -202.5}
+        - {x: 31, y: -200.5}
+        - {x: 41, y: -195.5}
+        - {x: 44, y: -191.5}
+    - name: Towers_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 10
+        width: 160
+        height: 645
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44, y: -311.5}
+        - {x: 57, y: -306.5}
+        - {x: 61, y: -300.5}
+        - {x: 63, y: -294.5}
+        - {x: 71, y: -296.5}
+        - {x: 79, y: -283.5}
+        - {x: 80, y: -277.5}
+        - {x: 80, y: 322.5}
+        - {x: 63, y: 322.5}
+        - {x: 57, y: 314.5}
+        - {x: 57, y: 322.5}
+        - {x: 38, y: 322.5}
+        - {x: 32, y: 314.5}
+        - {x: 32, y: 322.5}
+        - {x: 13, y: 322.5}
+        - {x: 7, y: 314.5}
+        - {x: 7, y: 322.5}
+        - {x: -7, y: 322.5}
+        - {x: -13, y: 314.5}
+        - {x: -13, y: 322.5}
+        - {x: -32, y: 322.5}
+        - {x: -32, y: 314.5}
+        - {x: -38, y: 322.5}
+        - {x: -57, y: 322.5}
+        - {x: -63, y: 314.5}
+        - {x: -63, y: 322.5}
+        - {x: -80, y: 322.5}
+        - {x: -80, y: -275.5}
+        - {x: -77, y: -282.5}
+        - {x: -63, y: -303.5}
+        - {x: -56, y: -309.5}
+        - {x: -45, y: -314.5}
+        - {x: -30, y: -319.5}
+        - {x: -19, y: -322.5}
+        - {x: 24, y: -322.5}
+        - {x: 31, y: -320.5}
+        - {x: 33, y: -315.5}
+        - {x: 41, y: -315.5}
+    - name: Towers_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 330
+        width: 320
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 137, y: -146.5}
+        - {x: 142, y: -138.5}
+        - {x: 151, y: -135.5}
+        - {x: 159, y: -123.5}
+        - {x: 160, y: -117.5}
+        - {x: 160, y: 162.5}
+        - {x: 98, y: 162.5}
+        - {x: 92, y: 154.5}
+        - {x: 92, y: 162.5}
+        - {x: 73, y: 162.5}
+        - {x: 67, y: 154.5}
+        - {x: 67, y: 162.5}
+        - {x: 48, y: 162.5}
+        - {x: 42, y: 154.5}
+        - {x: 42, y: 162.5}
+        - {x: 23, y: 162.5}
+        - {x: 17, y: 154.5}
+        - {x: 17, y: 162.5}
+        - {x: -7, y: 162.5}
+        - {x: -13, y: 154.5}
+        - {x: -13, y: 162.5}
+        - {x: -112, y: 162.5}
+        - {x: -112, y: 154.5}
+        - {x: -118, y: 162.5}
+        - {x: -160, y: 162.5}
+        - {x: -160, y: -115.5}
+        - {x: -157, y: -122.5}
+        - {x: -148, y: -138.5}
+        - {x: -136, y: -151.5}
+        - {x: -110, y: -159.5}
+        - {x: -99, y: -162.5}
+        - {x: 107, y: -162.5}
+        - {x: 112, y: -157.5}
+        - {x: 121, y: -155.5}
+        - {x: 131, y: -150.5}
+    - name: Towers_4
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 320
+        width: 160
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 200}
+        - {x: -80, y: -200}
+        - {x: 80, y: -200}
+        - {x: 80, y: 200}
+    - name: Towers_5
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 90
+        width: 160
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 82.5}
+        - {x: -80, y: -38.5}
+        - {x: -72, y: -61.5}
+        - {x: -38, y: -82.5}
+        - {x: 33, y: -82.5}
+        - {x: 74, y: -58.5}
+        - {x: 80, y: -45.5}
+        - {x: 80, y: 82.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

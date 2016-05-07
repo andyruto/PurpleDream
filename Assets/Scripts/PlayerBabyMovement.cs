@@ -49,5 +49,15 @@ public class PlayerBabyMovement : MonoBehaviour
         {
             rb2d.AddForce(rb2d.velocity.normalized * -stoppingForce);
         }
+            // Stopping
+        if (Input.GetAxis("Crouch") != 0)
+        {
+            rb2d.rotation = 0;
+            rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+        else
+        {
+            rb2d.constraints = RigidbodyConstraints2D.None;
+        }
     }
 }
