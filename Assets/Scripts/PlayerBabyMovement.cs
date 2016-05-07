@@ -19,11 +19,11 @@ public class PlayerBabyMovement : MonoBehaviour
     void OnCollisionStay2D(Collision2D coll)
     {
         // Groundcheck
-        if (coll.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        {
+        //if (coll.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        //{
             // Ground hit
             isInAir = false;
-        }
+        //}
     }
 
 	void FixedUpdate()
