@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Using namespaces
+using UnityEngine;
 using System.Collections;
 
 public class RandomMovement : MonoBehaviour {
@@ -18,7 +19,7 @@ public class RandomMovement : MonoBehaviour {
     // Object rotates around this point
     private Vector2 origin;
     
-    
+    //Executed on startup. Use this method for initialization.
 	void Start ()
     {
         radius = Random.Range(minRadius, maxRadius);
@@ -26,7 +27,8 @@ public class RandomMovement : MonoBehaviour {
         origin = transform.position;
         rotation = 0f;
 	}
-	
+
+	//Executed on every frame update.
 	void Update ()
     {
         rotation += speed;

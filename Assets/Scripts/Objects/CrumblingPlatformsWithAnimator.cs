@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Using namespaces
+using UnityEngine;
 using System.Collections;
 
 public class CrumblingPlatformsWithAnimator : MonoBehaviour {
@@ -26,17 +27,6 @@ public class CrumblingPlatformsWithAnimator : MonoBehaviour {
 		{
 			// Player collided
 			anim.SetBool("playerOnPlatform", true);
-		}
-	}
-
-	// Executed when collision stops
-	void OnCollisionExit2D(Collision2D coll)
-	{
-		// Player not colliding any more
-		if (coll.gameObject == GameObject.Find("Player"))
-		{
-			timer = 1f;
-			anim.SetBool ("playerOnPlatform", false);
 		}
 	}
 	

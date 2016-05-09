@@ -1,12 +1,14 @@
-﻿using UnityEngine;
+﻿//Using namespaces
+using UnityEngine;
 using System.Collections;
 
+//ToDo: Cloud does not slowly disappear at second step on cloud of player
 public class CrumblingPlatforms : MonoBehaviour {
     // --- Properties and fields --- //
     // Public
     public float timer = 1f;
     public float platformTimer = 5f;
-    public float vanishingSpeed = .95f;
+    public float vanishingSpeed = .50f;
 
     // Private
     // Components
@@ -17,8 +19,10 @@ public class CrumblingPlatforms : MonoBehaviour {
 	private bool platformBroken = false;
 
 	// --- Methods --- //
+	//Executed on startup. Use this method for initialization.
 	void Start ()
     {
+		//Get components of given game object
 		boxColl = gameObject.GetComponent<BoxCollider2D>();
         spr = gameObject.GetComponent<SpriteRenderer>();
 	}
@@ -34,22 +38,15 @@ public class CrumblingPlatforms : MonoBehaviour {
 
         }
 	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		// Let the clouds disapear slowly
-		if (playerOnPlatform)
-        {
-            spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, spr.color.a * vanishingSpeed);
-        }
-	}
 
 	// Executed on fixed physics update steps
 	void FixedUpdate()
 	{
-		// player on platform // platform not bricked
+		// player on platform // platform not disappeared
 		if (playerOnPlatform) {
+			//Let the cloud slowly disappear
+			spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, spr.color.a * vanishingSpeed);
+
 			// platform timer for hiding
 			timer -= Time.deltaTime;
 
@@ -66,7 +63,7 @@ public class CrumblingPlatforms : MonoBehaviour {
             }
 		}
 
-		// platform bricked // player not on platform any more
+		// cloud disappeard // player not on platform any more
 		if (platformBroken) {
 			//disabling platform collider
 			boxColl.enabled = false;
@@ -83,9 +80,8 @@ public class CrumblingPlatforms : MonoBehaviour {
                 platformBroken = false;
 
 				// Cloud apeard
-                spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 255f); ;
+                spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 255f);
             }
 		}
-
 	}
 }

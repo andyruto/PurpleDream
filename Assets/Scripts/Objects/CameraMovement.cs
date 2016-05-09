@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿//Using namespaces
+using UnityEngine;
 using System.Collections;
 
 class CameraMovement : MonoBehaviour {
-	//Properties and fields
+	// -- Properties and fields -- //
+	//Public
 	public float cameraDistOffset = 10f;
+
+	//Private
 	private Camera mainCamera;
 	private GameObject player;
 
@@ -15,6 +19,7 @@ class CameraMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		//Set camera position to player position
 		Vector3 playerInfo = player.transform.transform.position;
 		mainCamera.transform.position = new Vector3(playerInfo.x, playerInfo.y, playerInfo.z - cameraDistOffset);
 	}

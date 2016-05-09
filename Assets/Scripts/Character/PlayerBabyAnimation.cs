@@ -1,15 +1,17 @@
-﻿using UnityEngine;
+﻿//Using namespaces
+using UnityEngine;
 using System.Collections;
 
 public class PlayerBabyAnimation : MonoBehaviour {
-
 	//Properties and fields
+	//private
     private Animator anim;
     private Rigidbody2D rb2d;
 
 	//Executed on startup. Initial implementations in here.
 	void Start ()
     {
+		//Get components of given asset
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
 	}
@@ -31,9 +33,13 @@ public class PlayerBabyAnimation : MonoBehaviour {
 	//Executed on fixed physics update steps
     void FixedUpdate()
     {
+		//Stop rolling animaton if the velocity magnitute
+		//gets lower then a specific value
         if (rb2d.velocity.sqrMagnitude < .01f)
         {
             anim.SetBool("IsMoving", false);
+			rb2d.rotation = 0;
+			this.transform.rotation.Set(0f, 0f, 0f, 0f);
         }
     }
 }
